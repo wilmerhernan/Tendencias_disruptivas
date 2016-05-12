@@ -15,7 +15,9 @@ body {
   background: url("../images/pointer.png") no-repeat -4px 0;
 }
 canvas {
-  background: #ddd;
+  background: #dda;
+  border-radius: 0.5em;
+  box-shadow: rgba(0,0,0,0.6) 0px 5px 10px;
 }
 /*-------------------------
   Instrucciones
@@ -25,7 +27,7 @@ hgroup {
   background-color: rgba(255,255,255,0.7);
   width: 400px;
   height: 78px;
-  top: 60%;
+  top: 50%;
   left: 50%;
   margin: -120px 0 0 -225px;
   text-align: center;
@@ -48,9 +50,50 @@ h3 {
   font-style: italic;
   color: #999;
 }
+h4 {
+  font-size: 18px;
+  font-weight: normal;
+  font-style: italic;
+  color: #92a;
+  position: center;
+  text-align: center;
+  margin: 10px 0 0 15px;
+}
 #connections {
   position: fixed;
   top: 0;
   right: 0;
   font-size: 18px;
+}
+#derecha {
+  float: right;
+  width: 345px;
+  height: 600px;
+  background-color: #ddb;
+  border-radius: 0.5em;
+  box-shadow: rgba(0,0,0,0.6) 0px 5px 10px;
+}
+li {
+/*Bordes redondeados*/
+  -webkit-border-radius: 10px;
+/*Para chrome y Safari*/
+  -moz-border-radius: 10px;
+/*Para Firefox*/
+  -o-border-radius: 10px;
+/*Para Opera*/
+  border-radius: 10px;
+/*El estandar por defecto*/
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ccc)); /*Para chrome y Safari*/
+/*Degradados*/
+  background-image: -moz-linear-gradient(top center, #fff, #ccc); /*Para Firefox*/
+  background-image: -o-linear-gradient(top, #fff, #ccc); /*Para Opera*/
+  background-image: linear-gradient(top, #fff, #ccc); /*El estandar por defecto*/
+  overflow: hidden;
+  padding: 15px;
+  width: 200px;
+}
+#wrapper {
+  width: 220px;
+  margin: 100px auto;
+  font-size: 14px;
 }
